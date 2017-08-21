@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 通过这个配置文件，完成mybatis与数据库的连接      注意节点位置-->
+<configuration>
+    <!-- 配置mybatis的log实现为LOG4J -->
+    <settings><!--用来修改MyBatis在运行时的行为方式，主要是Mybatis的一些全局配置属性的设置  -->
+        <setting name="logImpl" value="LOG4J"/>
+        <!--懒加载  默认为true  -->
+        <!-- 打开延迟加载的开关 -->
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!-- 将积极加载改为消息加载即按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!--别名设置  -->
+    <typeAliases>
+        <package name="cn.bdqn.pojo"/><!--所有的cn.bdqn.pojo都可以取别名  别名就是类名  -->
+    </typeAliases>
+
+</configuration>

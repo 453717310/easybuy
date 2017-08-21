@@ -1,0 +1,40 @@
+初步分析
+    index.html          首页
+            Regist.html      用户注册
+            Login.html       用户登录
+            Member.html      订单管理中心
+                Member_Order.html       我的订单
+                Member_Address.html     收货地址
+                Member_User.html        用户信息
+                Member_Collect.html     我的收藏
+                Member_Msg.html         我的留言
+                Member_Links.html       推广链接
+                Member_Safe.html        账户安全
+                Member_Packet.html      我的红包
+                Member_Money.html       资金管理
+                    Member_Money_Charge.html
+                    Member_Money_Pay.html   使用支付宝
+                Member_Member.html      我的会员
+                    Member_Member_List.html     一级会员
+                Member_Results.html     我的业绩
+                Member_Cash.html        申请提现
+                Member_Commission.html  我的佣金
+            BuyCar.html         查看购物车
+            BuyCar_Two.html     确认订单信息
+            BuyCar_Three.html   成功提交订单
+
+
+
+
+    Brand.html          品牌页面
+    BrandList.html      品牌列表
+
+
+
+
+1.编写实体类
+
+2.搭建框架   包   配置文件
+
+3.编写dao
+    写登录  注册

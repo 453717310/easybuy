@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.dao.user.UserMapper">
+    <!--用户登录-->
+    <select id="login" resultType="Easybuy_user">
+        SELECT id,loginName,userName,password,sex,identityCode,email,mobile,`type` FROM easybuy_user
+          WHERE loginName=#{loginName}
+            AND password=#{password}
+    </select>
+    <!--用户注册-->
+    <insert id="regist" parameterType="Easybuy_user">
+        INSERT INTO easybuy_user(loginName,userName,password,sex,identityCode,email,mobile,type)
+          VALUES (#{loginName},#{userName},#{password},#{sex},#{identityCode},#{email},#{mobile},#{type})
+    </insert>
+</mapper>
